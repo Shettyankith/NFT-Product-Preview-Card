@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background:hsl(217, 54%, 11%);
+}
+
+
+.container{
+    position: relative;
+    left: 600px;
+    top: 100px;
+    background: hsl(216, 50%, 16%);
+    width: 292px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.image{
+    border-radius: 10px;
+}
+.image img{
+    width: 250px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+
+.title{
+    color: white;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.discription{
+    font-size: 13px;
+    color: #8e9aaf;
+    padding-bottom: 15px;
+}
+
+.etherium{
+    display: flex;
+    padding-bottom: 18px;
+    border-bottom: 1px hsl(215, 32%, 27%) solid;
+}
+
+.etherium p{
+    font-size: 13px;
+    margin-right: 100px;
+    color: #5bc0be;
+    font-weight: 600;
+}
+
+.etherium h6{
+    color: #8e9aaf;
+}
+
+.footer{
+    display: flex;
+    flex-direction: left;
+    padding-top: 10px;
+}
+
+
+.footer img{
+    max-height: 29px;
+    border:  1px white solid;
+    border-radius: 50%;
+    margin-right: 14px;
+    margin-top: 7px;
+}
+
+.footer p{
+    color: #8e9aaf;
+    font-size: 13px;
+    margin-top: 14px;
+}
+
+.footer span{
+    color: white;
+}
+
+.overlay{
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 20px;
+    right: 0;
+    height: 250px;
+    width: 250px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background-color: hsl(215, 51%, 70%);
+    cursor: pointer;
+}
+
+.eye{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20px;
+}
+
+
+.image:hover .overlay{
+    opacity: 0.5;
+}
+
+
+@media only screen and (max-width:375px) {
+    
+.container{
+    position: relative;
+    left: 1%;
+    top: 2%;
+    background: hsl(216, 50%, 16%);
+    width: 292px;
+    padding: 20px;
+    border-radius: 15px;
+}
+}
